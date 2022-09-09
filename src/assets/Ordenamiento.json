@@ -1,0 +1,57 @@
+[
+    {
+      "title": "Metodos de ordenamiento",
+      "code": "",
+      "sources": "https://itslr.edu.mx/archivos2013/TPM/temas/s3u5.html",
+      "inPutData": {
+        "images":[
+          "a",
+          "b"
+        ]
+      },
+      "outPutData": {
+        "images":[
+          "a",
+          "b"
+        ]
+      },
+      "data":[
+        {
+            "subtitle":"Ordenamiento SelectSort",
+            "body": "El algoritmo por selección tiene una complejidad de O(n^2), el algoritmo para realizar el mismo numero de comparaciones, es decir que por cada elemento realizara una comparacion.",
+            "images": []
+          },
+          {
+            "subtitle":"Ordenamiento ShellSort",
+            "body": "El ordenamiento ShellSort primero mueve los elementos mas grandes, de manera que los elementos con valores small se ordenaran con menores movimientos hasta su posicion final.",
+            "images": []
+          },
+          {
+            "subtitle":"Ordenamiento Burbuja mejorado",
+            "body": "Mediante el metodo burbuja, dado un arreglo de n elementos, se requiere de n-1 pasos para ordenar el arreglo.",
+            "images": []
+          },
+          {
+            "subtitle":"Ordenamiento QuickSort",
+            "body": "El ordenamiento quicksort fue creado por el cientifico britanico Ceilan Hoare en Colombo.\n            La complejidad del algoritmo en el mejor de los casos es O(nLog2n)\n            La forma en la que funciona este algoritmo es que simultaneamente se recorre por la izquierda a la par por la derecha. En el punto en el que se cruzan los indices sera la posicion adecuada para colocar el pivote porque sabemos que a uno de los lados todos los elementos son menores y que los del otro lado son mayores.\n",
+            "images": []
+          },
+          {
+            "subtitle":"Ordenamiento MergeSort",
+            "body": "El algoritmo mergesort es un algoritmo que funciona bajo el concepto divide y venceras. Fue desarrollado en 1945 por John Von Neumann.\n            La complejidad del algoritmo es de O(nLogn)\n            El ordenamiento funciona dividiendo la lista en 2 sublistas. Ordena recursivamente cada sublista con el metodo merge.\n",
+            "images": []
+          },
+          {
+            "subtitle":"Ordenamiento InsertSort",
+            "body": "Este ordenamiento es la forma mas natural para el humano de ordenar y puede usarse para ordenar un mazo de cartas. Fue creado por Benjamin Bustos y Patricio Poblete.\n            Tiene una complejidad de O(n^2)",
+            "images": []
+          },
+          {
+            "subtitle":"Ordenamiento burbuja",
+            "body": "El metodo de ordenamiento BubbleSort es uno de los algoritmos mas sencillos de ordenamiento. Funciona revisando cada elemento de la lista que se ordena, intercambiando los elemento en caso de no estar en el orden indicado.\n            El algoritmo realiza varios recorridos en la lista hasta no necesitar mas intercambios.\n            El autor del algoritmo no se conoce bien, pero parece que este algoritmo pertenece a Edwar H. Friedge, por unas de sus publicaciones sobre ordenamiento en sistemas de computadoras electronicas.\n            La complejidad de este metodo depende de como se encuentren ordenados los elementos, pero podemos decir que su complejidad es de O(n^2)\n",
+            "images": []
+          }
+        ]
+    }
+  ]
+  
