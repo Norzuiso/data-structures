@@ -1,8 +1,8 @@
 [
     {
-      "title": "any",
-      "code": "any;",
-      "sources": "any;",
+      "title": "Apuntadores",
+      "code": "",
+      "sources": "Gestión de Memoria - Sistemas Operativos I. (2018.). Google Sites.\n https://sites.google.com/site/sisoper1/home/gestion-de-memoria \n      Apuntadores. (2016). Introducción a la Programación Estructurada.\n http://programacionestructuradarrr.blogspot.com/2016/09/apuntadores.html \n      operador de indirección y el operador de dirección? (s. f.-a). Stack Overflow en español.\n https://es.stackoverflow.com/questions/104123/cual-es-la-diferencia-entre-el-operador-de-indirección-y-el-operador-de-dirección",
       "inPutData": {
         "images":[
           "a",
@@ -17,13 +17,62 @@
       },
       "data":[
         {
-          "subtitle":"apuntadores",
-          "body": "Los apuntadores apuntan a cosas que tienen que ser apuntadores",
+          "subtitle":"",
+          "body": "Un apuntador es una variable que contiene el dato o a una varuable pero solo la direccion de memoria, la cual corresponde a un dato o a una variable que contiene el dato. Cada variable que se utiliza en una aplicacion ocupa una o varias posiciones de memoria. Estas posiciones de memoria son accesibles por medio de una direccion.",
           "images": []
-        }, 
+        }
+      ]
+    },
+    {
+      "title": "Operaciones basicas con apuntadores",
+      "code": "",
+      "sources": "Gestión de Memoria - Sistemas Operativos I. (2018.). Google Sites.\n https://sites.google.com/site/sisoper1/home/gestion-de-memoria \n      Apuntadores. (2016). Introducción a la Programación Estructurada.\n http://programacionestructuradarrr.blogspot.com/2016/09/apuntadores.html \n      operador de indirección y el operador de dirección? (s. f.-a). Stack Overflow en español.\n https://es.stackoverflow.com/questions/104123/cual-es-la-diferencia-entre-el-operador-de-indirección-y-el-operador-de-dirección",
+      "inPutData": {
+        "images":[
+          "a",
+          "b"
+        ]
+      },
+      "outPutData": {
+        "images":[
+          "a",
+          "b"
+        ]
+      },
+      "data":[
         {
-          "subtitle":"No aputadores",
-          "body": "Los no apuntadores no apuntan a cosas que no tienen que ser apuntadores",
+          "subtitle":"Suma",
+          "body": "Suma o resta de un puntero, produce una nueva localizacion de memoria",
+          "images": []
+        },
+        {
+          "subtitle":"Comparacion",
+          "body": "Se pueden comparar apuntadores, utilizando expresiones logicas, para ver si estan apuntando o no a la misma direccion de memoria.",
+          "images": []
+        },
+        {
+          "subtitle":"Resta",
+          "body": "La resta de dos punteros da como resultado el numero de variables entre las dos direcciones",
+          "images": []
+        },
+        {
+          "subtitle":"Declaracion",
+          "body": "Los punteros se declaran con un asterisco de esta forma:\n          tipo * variable;",
+          "images": []
+        },
+        {
+          "subtitle":"Asignacion",
+          "body": "El valor que puede adquirir un puntero es por ejemplo, la direccion de una variable.",
+          "images": []
+        },
+        {
+          "subtitle":"Operador &",
+          "body": "El operador & devuelve la direccion de una variable.",
+          "images": []
+        },
+        {
+          "subtitle":"Referencia",
+          "body": "Referencia de un puntero: Se puede alterar una variable a la que apunta un puntero. Para ello se usa el operador de referencia, que es el asterisco: \n          * puntero = 45;",
           "images": []
         }
       ]
