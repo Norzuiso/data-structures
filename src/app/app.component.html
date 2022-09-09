@@ -1,46 +1,51 @@
+<div class="container-fluid">
 <div class="row">
   <div class="col">
     <div class="bg-primary py-3">
-
-        <span mat-icon-button class="favorite-icon text-white mx-5" aria-label="Example icon-button with heart icon">
-            <span class="h3">Estructura de datos</span>
-        </span>
-        <span mat-icon-button class="favorite-icon text-white mx-1 border-right"
-            aria-label="Example icon-button with heart icon">
-            <span>Basicos |</span>
-        </span>
-        <span mat-icon-button class="favorite-icon text-white mx-1 border-right"
-            aria-label="Example icon-button with share icon">
-            <span>POO |</span>
-        </span>
-        <span mat-icon-button class="favorite-icon text-white mx-1 border-right"
-            aria-label="Example icon-button with share icon">
-            <span>Apuntadores |</span>
-        </span>
-        <span mat-icon-button class="favorite-icon text-white mx-1 border-right"
-            aria-label="Example icon-button with share icon">
-            <span>Listas |</span>
-        </span>
-        <span mat-icon-span class="favorite-icon text-white mx-1 border-right"
-            aria-label="Example icon-button with share icon">
-            <span>Algoritmos de busqueda |</span>
-        </span>
-        <span mat-icon-button class="favorite-icon text-white mx-1 border-right"
-            aria-label="Example icon-button with share icon">
-            <span>Algoritmos de ordanmiento |</span>
-        </span>
-        <span mat-icon-button class="favorite-icon text-white mx-1" aria-label="Example icon-button with share icon">
-            <span>Estructuras de datos Avanzadas</span>
-        </span>
+      <span mat-icon-button class="favorite-icon text-white mx-5" aria-label="Example icon-button with heart icon">
+        <span class="h3">Estructura de datos</span>
+      </span>
     </div>
   </div>
 </div>
 <div class="row">
-  <div class="col">
-    <div *ngFor="let ans of answer; index as i; first as isFirst">
-      {{ans.title}}
+  <div class="col-3">
+    <div class="mx-auto" style="width: 80%;">
+      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="basicos()"> <span class="text-light">Basicos</span></button>
+
+      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="busqueda()"> <span class="text-light">Algoritmos de busqueda</span></button>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="mx-auto" style="width: 100%;">
+    
+      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="poo()"> <span class="text-light">POO</span></button>
+
+      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="ordenamiento()"> <span class="text-light">Algoritmos de ordanmiento</span></button>
 
     </div>
-    <app-show-data></app-show-data>
   </div>
+  <div class="col-3">
+    <div class="mx-auto" style="width: 100%;">
+      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="apuntadores()"> <span class="text-light">Apuntadores</span></button>
+
+      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="avanzados()"> <span class="text-light">Estructuras de datos Avanzadas</span></button>
+
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="mx-auto" style="width: 80%;">
+
+      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="listas()"> <span class="text-light">Listas</span></button>
+
+    </div>
+  </div>
+
+</div>
+<div class="row">
+  <div class="col">
+    
+  </div>
+</div>
+
 </div>
