@@ -1,6 +1,6 @@
 [
     {
-      "title": "Tipo de datos",
+      "title": "TDA Listas",
       "code": "",
       "sources": "https://www.infor.uva.es/~belar/Ampliacion/TDAS/T6_TDA_Lista.pdf",
       "inPutData": {
@@ -104,6 +104,35 @@
             "body":"Imprime la lista en pantalla ",
             "images": []
 
+        }
+      ]
+    },
+    {
+      "title": "TDA Lista doblemente ligada",
+      "code": "",
+      "sources": "https://ccia.ugr.es/~jfv/ed1/tedi/cdrom/docs/ldoble.html",
+      "inPutData": {
+        "images":[
+          "a",
+          "b"
+        ]
+      },
+      "outPutData": {
+        "images":[
+          "a",
+          "b"
+        ]
+      },
+      "data":[
+        {
+          "subtitle":"",
+          "body": "La lista doblemente ligada contiene por lo menos 3 campos: Uno para almacenar la información y otros dos para guardar dirección de memoria del modo antecesor y sucesor.\n          Desde luego que en el primer elemento el nodo antecesor debe de apuntar a un valor nulo en caso de ser una lista lineal.\n          Al igual que en la lista simple podemos encontrar los siguientes métodos:\n          Insertar: recibe un elemento y lo coloca en la ultima posición.\n          Eliminar: recibe la posicion de un elemento, ademas, los nodos del elemento anterior y del sucesor, deben cambiar.\n          Buscar:Recibe un valor y lo busca en los elementos de la lista. En caso de no encontrarlo responde un null\n",
+          "images": []
+        },
+        {
+          "subtitle":"",
+          "body": "Vacia:Verifica si la lista cuenta con elementos. Retorna un valor booleano.\n          Inicializa:Reserva un espacio en memoria.\n          Primero:Retorna el primer elemento de la lista.\n          Ultimo:Retorna el ultimo elemento de la lista.\n          Siguiente:Dada una posicion, retorna el valor del siguiente elemento.\n          Anterior:Dada una posicion retorna el valor anterior.\n          Tamaño:Retorna la cantidad de elementos de una lista.\n          Vaciar(eliminar todo):Borra todos los elementos de la lista.\n          Mostrar listas:Imprime en pantalla los elementos de una lista\n",
+          "images": []
         }
       ]
     }
