@@ -9,7 +9,7 @@ export class JSONRecord {
 export class Data{
   public subtitle: any;
   public body: any;
-  public image: any;
+  public image: string[] = [];
 }
 export class InputData{
   public images: string[] = [];
