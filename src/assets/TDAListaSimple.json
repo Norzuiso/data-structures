@@ -5,14 +5,10 @@
       "sources": "https://www.infor.uva.es/~belar/Ampliacion/TDAS/T6_TDA_Lista.pdf",
       "inPutData": {
         "images":[
-          "a",
-          "b"
         ]
       },
       "outPutData": {
         "images":[
-          "a",
-          "b"
         ]
       },
       "data":[
@@ -113,14 +109,10 @@
       "sources": "https://ccia.ugr.es/~jfv/ed1/tedi/cdrom/docs/ldoble.html",
       "inPutData": {
         "images":[
-          "a",
-          "b"
         ]
       },
       "outPutData": {
         "images":[
-          "a",
-          "b"
         ]
       },
       "data":[

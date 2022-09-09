@@ -28,6 +28,22 @@ export class FuuuckService {
 
   public getApuntadores(): Observable<any>{
     return this.http.get("./assets/Apuntadores.json");
- 
   }
+
+  public getOrdenamiento(): Observable<any>{
+    return this.http.get("./assets/Ordenamiento.json");
+  }
+
+  public getListas(): Observable<any>{
+    return this.http.get("./assets/Listas.json");
+  }
+
+  public getAvanzado(): Observable<any>{
+    return this.http.get("./assets/Avanzado.json");
+  }
+
+  public getBusqueda(): Observable<any>{
+    return this.http.get("./assets/Busqueda.json");
+  }
+
 }

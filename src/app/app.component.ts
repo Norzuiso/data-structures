@@ -11,16 +11,6 @@ import {JSONRecord} from "./Components/JSONRecord";
 export class AppComponent implements OnInit {
   public answer: JSONRecord[] = [];
 
-  public showOptions = true;
-
-  public showBasicos = false;
-  public showPOO = false;
-  public showApuntadores = false;
-  public showListas = false;
-  public showBusqueda = false;
-  public showOrdenado = false;
-  public showAvanzados = false;
-
   constructor(private service: FuuuckService) {
   }
 
@@ -29,25 +19,31 @@ export class AppComponent implements OnInit {
   }
 
   public basicos(){
-
+    this.service.getTiposDeDatos().subscribe(data => this.answer = data);
   }
+
   public busqueda(){
-
+    this.service.getBusqueda().subscribe(data => this.answer = data);
   }
+
   public poo(){
-
+    this.service.getPOO().subscribe(data => this.answer = data);
   }
+
   public ordenamiento(){
-
+    this.service.getOrdenamiento().subscribe(data => this.answer = data);
   }
+  
   public apuntadores(){
-
+    this.service.getApuntadores().subscribe(data => this.answer = data);
   }
+
   public avanzados(){
-
+    this.service.getAvanzado().subscribe(data => this.answer = data);
   }
+
   public listas(){
-    
+    this.service.getListas().subscribe(data => this.answer = data);
   }
 
 }

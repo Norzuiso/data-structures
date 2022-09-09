@@ -1,51 +1,91 @@
 <div class="container-fluid">
-<div class="row">
-  <div class="col">
-    <div class="bg-primary py-3">
-      <span mat-icon-button class="favorite-icon text-white mx-5" aria-label="Example icon-button with heart icon">
-        <span class="h3">Estructura de datos</span>
-      </span>
+  <div class="row">
+    <div class="col">
+      <div class="bg-dark py-3">
+        <span mat-icon-button class="favorite-icon text-white mx-5" aria-label="Example icon-button with heart icon">
+          <span class="h3">Estructura de datos</span>
+        </span>
+      </div>
     </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-3">
-    <div class="mx-auto" style="width: 80%;">
-      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="basicos()"> <span class="text-light">Basicos</span></button>
+  <div class="row">
+    <div class="col-3">
+      <div class="mx-auto" style="width: 80%;">
+        <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="basicos()"> <span
+            class="text-light">Basicos</span></button>
 
-      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="busqueda()"> <span class="text-light">Algoritmos de busqueda</span></button>
+        <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="busqueda()"> <span
+            class="text-light">Algoritmos de busqueda</span></button>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="mx-auto" style="width: 100%;">
+
+        <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="poo()"> <span
+            class="text-light">POO</span></button>
+
+        <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="ordenamiento()"> <span
+            class="text-light">Algoritmos de ordanmiento</span></button>
+
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="mx-auto" style="width: 100%;">
+        <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="apuntadores()"> <span
+            class="text-light">Apuntadores</span></button>
+
+        <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="avanzados()"> <span
+            class="text-light">Estructuras de datos Avanzadas</span></button>
+
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="mx-auto" style="width: 80%;">
+
+        <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="listas()"> <span
+            class="text-light">Listas</span></button>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <div *ngIf="answer!=null" class="container">
+        <div *ngFor="let ans of answer; index as i; first as isFirst">
+
+          <!---Title--->
+          <div *ngIf="ans.title != ''">
+            <span>
+              <h1 class="text-center">{{ans.title}}</h1>
+            </span>
+          </div>
+
+          <!---Data--->
+          
+          <div *ngIf="ans.data != null" >
+            <hr>
+            <div *ngFor="let data of ans.data">
+                <span class="h4">{{data.subtitle}}</span>    
+                <pre>{{data.body}}</pre>
+            </div>
+        </div>
+
+          <!---Code--->
+          <div *ngIf="ans.code != ''" class="border bg-dark text-white p-4 w-50">
+            <span class="">
+              <pre class="text-left">{{ans.code}}</pre>
+            </span>
+          </div>
+
+          <div *ngIf="ans.sources != ''">
+            <hr>
+            <h3 class="text-center">Fuentes</h3>
+            <pre>{{ans.sources}}</pre>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="col-3">
-    <div class="mx-auto" style="width: 100%;">
-    
-      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="poo()"> <span class="text-light">POO</span></button>
-
-      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="ordenamiento()"> <span class="text-light">Algoritmos de ordanmiento</span></button>
-
-    </div>
-  </div>
-  <div class="col-3">
-    <div class="mx-auto" style="width: 100%;">
-      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="apuntadores()"> <span class="text-light">Apuntadores</span></button>
-
-      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="avanzados()"> <span class="text-light">Estructuras de datos Avanzadas</span></button>
-
-    </div>
-  </div>
-  <div class="col-3">
-    <div class="mx-auto" style="width: 80%;">
-
-      <button type="button" class="btn btn-info w-100 my-3 py-3" (click)="listas()"> <span class="text-light">Listas</span></button>
-
-    </div>
-  </div>
-
-</div>
-<div class="row">
-  <div class="col">
-    
-  </div>
-</div>
 
 </div>
