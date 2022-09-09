@@ -1,0 +1,51 @@
+[
+    {
+      "title": "TDA Pila",
+      "code": "Class Nodo{\n        Dato * dato;\n        Nodo * siguiente;\n    };\n    Modelo de la clase Pila \n    Class Pila{\n        Nodo * top;\n        void push(Nodo * nodo);\n        void pop(Nodo * nodo);\n        Nodo * buscar(Nodo * nodo);\n        Boolean vacia();\n        void init();\n       int size();\n        void vaciar();\n        void mostrarPila();\n    };\n",
+      "sources": "https://www.youtube.com/watch?v=KMbf3UHaAs4",
+      "inPutData": {
+        "images":[
+          "a",
+          "b"
+        ]
+      },
+      "outPutData": {
+        "images":[
+          "a",
+          "b"
+        ]
+      },
+      "data":[
+        {
+          "subtitle":"",
+          "body": "La estructura de datos pila, se rige con el estándar LIFO, es decir, el ultimo que entra es el primero en salir.\n          En las pilas encontramos las siguientes operaciones características:\n          1- Push: Agrega un nuevo elemento en la cima de la pila.\n          2- Pop: Obtiene/borra el ultimo elemento agregado.\n",
+          "images": []
+        }
+      ]
+    },
+    {
+        "title": "TDA Cola",
+        "code": "modelo de la clase Cola\n        Class Cola{\n            Nodo * first;\n            Nodo * last;\n            void queue(Nodo * nodo);\n            void dequeue(Nodo * nodo);\n            Nodo * buscar(Nodo * nodo);\n            Nodo * first();\n            Nodo * last();\n            void init();\n            int tamano();\n            void vaciar();\n            void mostrarCola();\n        }\n",        
+        "sources": "https://www.youtube.com/watch?v=JDlhpEuLUrQ",
+        "inPutData": {
+          "images":[
+            "a",
+            "b"
+          ]
+        },
+        "outPutData": {
+          "images":[
+            "a",
+            "b"
+          ]
+        },
+        "data":[
+          {
+            "subtitle":"",
+            "body": "Las colas son una estructura de datos parecida a las colas en la vida real. Es decir, nos incorporamos al final de la cola y conforme avanza llegaremos a la cabeza de la cola, donde terminara nuestro progreso.\n            Una cola se puede componer de una lista enlazada, solo es necesario unir nodos.\n            Las operaciones de una cola son parecidas a las de una lista, pero, son solo 3:\n            1-Encolar:La operación encolar agrega elementos al final de la cola, similar a la operación insertar el final de una lista.\n            2-Consultar:Obtiene el siguiente elemento de la cola.\n            3-Eliminar: Elimina un elemento al principio de la cola, esto se hace una vez se procesa el dato\n",
+            "images": []
+          }
+        ]
+      }
+  ]
+  
