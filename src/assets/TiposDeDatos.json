@@ -1,7 +1,7 @@
 [
     {
       "title": "Tipo de datos",
-      "code": "",
+      "code": null,
       "sources": "Tipos de Datos en Programación. (2020). Descubrearduino.com.\n      https://descubrearduino.com/tipos-de-datos/\n      ▷ ¿Qué TIPOS DE DATOS existen en programación? 【definición】. (s. f.). Lenguajes de           programación.\n https://lenguajesdeprogramacion.net/diccionario/que-tipos-datos-existen-en-programacion/\n           5.3 Utilización de arreglos. - samei. (s. f.). Google Sites.\n            https://sites.google.com/site/programacionyal/home/unidad-5/5-3-utilizacion-de-arreglos\n            NetApp. (2019, 14 de febrero). ¿Qué son los contenedores? - Ventajas y casos prácticos |    NetApp. Data Management Solutions for the Cloud | NetApp.\n      https://www.netapp.com/es/devops-solutions/what-are-containers/Interfaces. (s. f.). Campus de Gipuzkoa - UPV/EHU. \n     http://www.sc.ehu.es/sbweb/fisica/cursoJava/fundamentos/herencia/interfaces.html",
       "inPutData": {
         "images":[

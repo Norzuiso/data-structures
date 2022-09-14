@@ -1,7 +1,14 @@
 [
     {
       "title": "Busquedas",
-      "code": "int binarySearch(int arr[], int l, int r, int x)\n      {\n          if (r >= l) {\n      int mid = l + (r - l) / 2;\n       \n      // If the element is present at the middle\n      // itself\n      if (arr[mid] == x)\n          return mid;\n       \n      // If element is smaller than mid, then\n      // it can only be present in left subarray\n      if (arr[mid] > x)\n          return binarySearch(arr, l, mid - 1, x);\n             // Else the element can only be present\n      // in right subarray\n      return binarySearch(arr, mid + 1, r, x);\n          }\n       \n          // We reach here when element is not\n          // present in array\n          return -1;\n      }",
+      "code": [
+        {
+          "title": "Busqueda binaria",
+          "code": 
+          "int binarySearch(int arr[], int l, int r, int x)\n      {\n          if (r >= l) {\n      int mid = l + (r - l) / 2;\n       \n      // Si el elemento actual esta presente en el medio\n      if (arr[mid] == x)\n          return mid;\n      // retornar el medio\n       \n      //si el elemento es más pequeño que el medio\n      // entonces debe de estar presente en el subarray izquierdo\n      if (arr[mid] > x)\n          return binarySearch(arr, l, mid - 1, x);\n             // si no esta el elemento solo puede estar\n      //en el subarray derecho\n      return binarySearch(arr, mid + 1, r, x);\n          }\n       \n          //Si el elemento no se encuentra en el arreglo\n          // retornamos -1\n          return -1;\n      }"
+        }
+      
+      ],
       "sources": "https://uneginginf05.es.tl/M-e2-todo-de-Busqueda-Secuencial-y-Binaria.htm",
       "inPutData": {
         "images":[
@@ -21,7 +28,13 @@
     },
     {
       "title": "",
-      "code": "int search(int arr[], int N, int x)\n      {\n          int i;\n          for (i = 0; i < N; i++)\n      if (arr[i] == x)\n          return i;\n          return -1;\n      }",
+      "code": [
+        
+        {
+          "title": "Busqueda binaria",
+          "code": "int search(int arr[], int N, int x)\n      {\n          int i;\n          for (i = 0; i < N; i++)\n      if (arr[i] == x)\n          return i;\n          return -1;\n      }"
+        }
+    ],
       "sources": "https://uneginginf05.es.tl/M-e2-todo-de-Busqueda-Secuencial-y-Binaria.htm",
       "inPutData": {
         "images":[

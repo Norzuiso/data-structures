@@ -1,7 +1,15 @@
 [
     {
       "title": "Programacion orientada a objetos",
-      "code": "",
+      "code": [
+        
+        {
+          "title": "Clase Empleado de ejemplo",
+          "code": 
+          "class Empleado {\n        private:\n            char* m_nombre;\n            char* m_departamento;\n            char* m_posicion;\n            long m_salario;    \n        public:\n            void ImprimirInfo();\n            void SetNombre( char* nombre ) { m_nombre = nombre }\n            void SetDepartamento( char * departamento) { m_departamento = departamento }\n            void SetPosicion ( char* posicion ) { m_posicion = posicion }\n            void SetSalario ( long salario ) { m_salario = salario }\n            const char* GetNombre( ){ return m_nombre }\n            const char* GetDepartamento( ){ return m_departamento }\n            const char* GetPosicion( ){ return m_posicion }\n           const char* GetSalario( ){ return m_salario }\n    };"
+        }
+      ],
+        
       "sources": "https://desarrolloweb.com/articulos/499.php",
       "inPutData": {
         "images":[

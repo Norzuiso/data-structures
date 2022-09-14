@@ -72,10 +72,15 @@
         </div>
 
           <!---Code--->
-          <div *ngIf="ans.code != ''" class="border bg-dark text-white p-4 w-50">
-            <span class="">
-              <pre class="text-left">{{ans.code}}</pre>
-            </span>
+          <div *ngIf="ans.code != null" >
+          <div class="border bg-dark text-white p-4 w-50">
+            <div *ngFor="let data of ans.code" >
+              <p class="h-3 text-warning">{{data.title}}</p>
+              <span class="">
+                <pre class="text-left">{{data.code}}</pre>
+              </span>
+          </div>
+        </div>
           </div>
 
           <div *ngIf="ans.sources != ''">

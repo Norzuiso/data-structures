@@ -1,6 +1,6 @@
 export class JSONRecord {
   public title: any;
-  public code: any;
+  public code: Code[] = [];
   public sources: any;
   public inPutData: InputData = new InputData;
   public outPutData: OutputData = new OutputData;
@@ -17,4 +17,9 @@ export class InputData{
 
 export class OutputData{
   public images: string[] = [];
+}
+
+export class Code{
+  public title: any;
+  public code: any;
 }

@@ -1,7 +1,33 @@
 [
     {
       "title": "Metodos de ordenamiento",
-      "code": "",
+      "code": [
+        {
+          "title":"SelectSort",
+          "code": "void swap(int *xp, int *yp)\n{\n    int temp = *xp;\n     *xp = *yp;\n          *yp = temp;\n}\nvoid selectionSort(int arr[], int n)\n{\n    int i, j, min_idx;\n \n    for (i = 0; i < n-1; i++)\n    {\n       \n        min_idx = i;\n        for (j = i+1; j < n; j++)\n        if (arr[j] < arr[min_idx])\n            min_idx = j;\n \n        if(min_idx!=i)\n            swap(&arr[min_idx], &arr[i]);\n    }\n}"
+        },
+        {
+          "title":"Shell sort",
+          "code": "int shellSort(int arr[], int n)\n{\n    for (int gap = n/2; gap > 0; gap /= 2)\n    {\n        for (int i = gap; i < n; i += 1)\n        {\n            int temp = arr[i];\n            int j;            \n            for (j = i; j >= gap && arr[j - gap] > temp; j -= gap)\n                arr[j] = arr[j - gap];\n              \n            arr[j] = temp;\n        }\n    }\n    return 0;\n}"
+          
+        },
+        {
+          "title":"QuickSort",
+          "code": "void swap(int* a, int* b) \n{ \n    int t = *a; \n    *a = *b; \n    *b = t; \n} \nint partition (int arr[], int low, int high) \n{ \n    int pivot = arr[high];\n    int i = (low - 1); \n  \n    for (int j = low; j <= high - 1; j++) \n    { \n        if (arr[j] < pivot) \n        { \n            i++;\n            swap(&arr[i], &arr[j]); \n        } \n    } \n    swap(&arr[i + 1], &arr[high]); \n    return (i + 1); \n} \nvoid quickSort(int arr[], int low, int high) \n{ \n    if (low < high) \n    { \n        \n        int pi = partition(arr, low, high); \n        quickSort(arr, low, pi - 1); \n        quickSort(arr, pi + 1, high); \n    } \n} "
+        },
+        {
+          "title":"MergeSort",
+          "code": "void merge(int array[], int const left, int const mid,\n           int const right)\n{\n    auto const subArrayOne = mid - left + 1;\n    auto const subArrayTwo = right - mid;\n  \n    auto *leftArray = new int[subArrayOne],\n         *rightArray = new int[subArrayTwo];\n  \n    for (auto i = 0; i < subArrayOne; i++)\n        leftArray[i] = array[left + i];\n    for (auto j = 0; j < subArrayTwo; j++)\n        rightArray[j] = array[mid + 1 + j];\n  \n    auto indexOfSubArrayOne = 0,\n    indexOfSubArrayTwo = 0; \n    int indexOfMergedArray\n        = left; \n  \n    while (indexOfSubArrayOne < subArrayOne\n           && indexOfSubArrayTwo < subArrayTwo) {\n        if (leftArray[indexOfSubArrayOne]\n            <= rightArray[indexOfSubArrayTwo]) {\n            array[indexOfMergedArray]\n                = leftArray[indexOfSubArrayOne];\n            indexOfSubArrayOne++;\n        }\n        else {\n            array[indexOfMergedArray]\n                = rightArray[indexOfSubArrayTwo];\n            indexOfSubArrayTwo++;\n        }\n        indexOfMergedArray++;\n    }\n    \n    while (indexOfSubArrayOne < subArrayOne) {\n        array[indexOfMergedArray]\n            = leftArray[indexOfSubArrayOne];\n        indexOfSubArrayOne++;\n        indexOfMergedArray++;\n    }\n    while (indexOfSubArrayTwo < subArrayTwo) {\n        array[indexOfMergedArray]\n            = rightArray[indexOfSubArrayTwo];\n        indexOfSubArrayTwo++;\n        indexOfMergedArray++;\n    }\n    delete[] leftArray;\n    delete[] rightArray;\n}\n  \n  \nvoid mergeSort(int array[], int const begin, int const end)\n{\n    if (begin >= end)\n        return;\n  \n    auto mid = begin + (end - begin) / 2;\n    mergeSort(array, begin, mid);\n    mergeSort(array, mid + 1, end);\n    merge(array, begin, mid, end);\n}\n  "
+        },
+        {
+          "title":"InsertSort",
+          "code": "void insertionSort(int arr[], int n) \n{ \n    int i, key, j; \n    for (i = 1; i < n; i++)\n    { \n        key = arr[i]; \n        j = i - 1; \n        while (j >= 0 && arr[j] > key)\n        { \n            arr[j + 1] = arr[j]; \n            j = j - 1; \n        } \n        arr[j + 1] = key; \n    } \n} "
+        },
+        {
+          "title":"burbuja",
+          "code": "void bubbleSort(int arr[], int n)\n{\n    int i, j;\n    for (i = 0; i < n - 1; i++)\n \n        for (j = 0; j < n - i - 1; j++)\n            if (arr[j] > arr[j + 1])\n                swap(arr[j], arr[j + 1]);\n}"
+        }
+      ],
       "sources": "https://itslr.edu.mx/archivos2013/TPM/temas/s3u5.html",
       "inPutData": {
         "images":[
