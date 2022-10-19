@@ -45,5 +45,9 @@ export class FuuuckService {
   public getBusqueda(): Observable<any>{
     return this.http.get("./assets/Busqueda.json");
   }
+  public getArbolesGrafos(): Observable<any>{
+    return this.http.get("./assets/ArbolesGrafos.json");
+
+  }
 
 }

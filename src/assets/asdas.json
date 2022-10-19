@@ -1,8 +1,0 @@
-{
-    "algo": "\nvoid swap(int *xp, int *yp)\n{\n	int temp = *xp;\n	*xp = *yp;\n	*yp = temp;\n}\n\nvoid selectionSort(int arr[], int n)\n{\n	int i, j, min_idx;\n	for (i = 0; i < n-1; i++)\n	{\n	\n		min_idx = i;\n		for (j = i+1; j < n; j++)\n		if (arr[j] < arr[min_idx])\n			min_idx = j;\n\n		if(min_idx!=i)\n			swap(&arr[min_idx], &arr[i]);\n	}\n}"
-},
-{
-    "title": "Apuntadores ejemplo",
-    "code": "\nvoid swap(int *xp, int *yp)\n{\n	int temp = *xp;\n	*xp = *yp;\n	*yp = temp;\n}\n\nvoid selectionSort(int arr[], int n)\n{\n	int i, j, min_idx;\n	for (i = 0; i < n-1; i++)\n	{\n	\n		min_idx = i;\n		for (j = i+1; j < n; j++)\n		if (arr[j] < arr[min_idx])\n			min_idx = j;\n\n		if(min_idx!=i)\n			swap(&arr[min_idx], &arr[i]);\n	}\n}"
-
-},

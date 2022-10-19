@@ -46,4 +46,7 @@ export class AppComponent implements OnInit {
     this.service.getListas().subscribe(data => this.answer = data);
   }
 
+  public arbolesGrafos(){
+    this.service.getArbolesGrafos().subscribe(data => this.answer = data);
+  }
 }

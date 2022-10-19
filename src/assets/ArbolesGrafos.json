@@ -1,0 +1,45 @@
+[
+    {
+        "title": "Arboles",
+        "sources": "https://www.programacion.com.py/escritorio/c/arboles-en-c",
+        "data": [
+          {
+            "subtitle": "",
+            "body": "Un árbol se puede definir como una estructura jerárquica y en forma no lineal, aplicada sobre una colección de elementos u objetos llamados nodos.  \nLos árboles son considerados las estructuras de datos no lineales y dinámicas de datos muy importantes del área de computación.  \nLos árboles son muy utilizados en informática como un método eficiente para búsquedas grandes y complejas.  \nCasi todos los sistemas operativos almacenan sus archivos en árboles o estructuras similares a árboles. \nSe les llama estructuras dinámicas, porque las mismas pueden cambiar tanto de forma como de tamaño durante la ejecución del programa. Y estructuras no lineales porque cada elemento del árbol puede tener más de un sucesor \n",
+            "images": [
+              "./assets/images/arbol.gif"
+            ]
+          },
+          {
+            "subtitle": "Arboles binarios",
+            "body": "Un árbol binario es aquel es el que cada elemento apunta como máximo a otros 2 elementos, comúnmente llamados hijo izquierdo y hijo derecho.",
+            "images": [
+              "./assets/images/ARBOL ABB.png"
+            ],
+            "code": [
+              {
+                "title": "Arboles ejemplo",
+                "code": "#include <iostream> \n#include <cstdlib> \nusing namespace std; \n \nstruct nodo{ \n     int nro; \n     struct nodo *izq, *der; \n}; \n \ntypedef struct nodo *ABB; \n/* es un puntero de tipo nodo que hemos llamado ABB, que ulitizaremos \n   para mayor facilidad de creacion de variables */ \n \nABB crearNodo(int x) \n{ \n     ABB nuevoNodo = new(struct nodo); \n     nuevoNodo->nro = x; \n     nuevoNodo->izq = NULL; \n     nuevoNodo->der = NULL; \n \n     return nuevoNodo; \n} \nvoid insertar(ABB &arbol, int x) \n{ \n     if(arbol==NULL) \n     { \n           arbol = crearNodo(x); \n     } \n     else if(x < arbol->nro) \n          insertar(arbol->izq, x); \n     else if(x > arbol->nro) \n          insertar(arbol->der, x); \n} \n \nvoid preOrden(ABB arbol) \n{ \n     if(arbol!=NULL) \n     { \n          cout << arbol->nro << \"  \"; \n          preOrden(arbol->izq); \n          preOrden(arbol->der); \n     } \n} \n \nvoid enOrden(ABB arbol) \n{ \n     if(arbol!=NULL) \n     { \n          enOrden(arbol->izq); \n          cout << arbol->nro <<  \"  \"; \n          enOrden(arbol->der); \n     } \n} \n \nvoid postOrden(ABB arbol) \n{ \n     if(arbol!=NULL) \n     { \n          postOrden(arbol->izq); \n          postOrden(arbol->der); \n          cout << arbol->nro <<  \"  \"; \n     } \n} \n \nvoid verArbol(ABB arbol, int n) \n{ \n     if(arbol==NULL) \n          return; \n     verArbol(arbol->der, n+1); \n \n     for(int i=0; i<n; i++) \n         cout<< \"    \"; \n \n     cout<< arbol->nro <<endl; \n \n     verArbol(arbol->izq, n+1); \n} \n \nint main() \n{ \n    ABB arbol = NULL;   // creado Arbol \n \n    int n;  // numero de nodos del arbol \n    int x; // elemento a insertar en cada nodo \n \n    cout <<  \"\n\t\t  ..[ ARBOL BINARIO DE BUSQUEDA ]..  \n\n \"; \n \n    cout <<  \" Numero de nodos del arbol:   \"; \n    cin >> n; \n    cout << endl; \n \n    for(int i=0; i<n; i++) \n    { \n        cout <<  \" Numero del nodo  \" << i+1 <<  \":  \"; \n        cin >> x; \n        insertar( arbol, x); \n    } \n \n    cout <<  \"\n Mostrando ABB \n\n \"; \n    verArbol( arbol, 0); \n \n    cout <<  \"\n Recorridos del ABB \"; \n \n    cout <<  \"\n\n En orden   :   \";   enOrden(arbol); \n    cout <<  \"\n\n Pre Orden  :   \";   preOrden(arbol); \n    cout <<  \"\n\n Post Orden :   \";   postOrden(arbol); \n \n    cout << endl << endl; \n \n    system( \"pause \"); \n    return 0; \n}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Grafos",
+        "sources": "http://informatica.uv.es/iiguia/AED/oldwww/2001_02/Teoria/Tema_15alfa.pdf",
+        "data": [
+          {
+            "subtitle": "",
+            "body": "Un grafo en el ámbito de las ciencias de la computación es un tipo abstracto de datos (TAD), que consiste en un conjunto de nodos (también llamados vértices) y un conjunto de arcos (aristas) que establecen relaciones entre los nodos. El concepto de grafo TAD desciende directamente del concepto matemático de grafo.",
+            "images": ["./assets/images/Matriz_de_adyacencia.jpg"],
+            "code": [
+              {
+                "title": "Grafos ejemplo",
+                "code": "#include <iostream> \n#include <vector> \nusing namespace std; \n  \n// Estructura de datos para almacenar un borde de graph \nstruct Edge { \n    int src, dest; \n}; \n  \n// Una clase para representar un objeto graph \nclass Graph \n{ \npublic: \n    // un vector de vectores para representar una lista de adyacencia \n    vector<vector<int>> adjList; \n  \n    // Constructor de graph \n    Graph(vector<Edge> const &edges, int n) \n    { \n        // cambiar el tamaño del vector para contener `n` elementos de tipo `vector<int>` \n        adjList.resize(n); \n  \n        // agrega bordes al grafo dirigido \n        for (auto &edge: edges) \n        { \n            // insertar al final \n            adjList[edge.src].push_back(edge.dest); \n  \n            // elimine el comentario del siguiente código para el graph no dirigido \n            // adjList[edge.dest].push_back(edge.src); \n        } \n    } \n}; \n  \n// Función para imprimir la representación de la lista de adyacencia de un graph \nvoid printGraph(Graph const &graph, int n) \n{ \n    for (int i = 0; i < n; i++) \n    { \n        // imprime el número de vértice actual \n        cout << i <<  \" ——>  \"; \n  \n        // imprime todos los vértices vecinos de un vértice `i` \n        for (int v: graph.adjList[i]) { \n            cout << v <<  \"  \"; \n        } \n        cout << endl; \n    } \n} \n  \n// Implementación de graph usando STL \nint main() \n{ \n    // vector de los bordes del graph según el diagrama anterior. \n    // Tenga en cuenta que el vector de inicialización en el siguiente formato \n    // funciona bien en C++11, C++14, C++17 pero fallará en C++98. \n    vector<Edge> edges = \n    { \n        {0, 1}, {1, 2}, {2, 0}, {2, 1}, {3, 2}, {4, 5}, {5, 4} \n    }; \n  \n    // número total de nodos en el graph (etiquetados de 0 a 5) \n    int n = 6; \n  \n    // construir grafo \n    Graph graph(edges, n); \n  \n    // imprime la representación de la lista de adyacencia de un graph \n    printGraph(graph, n); \n  \n    return 0; \n} \n"
+              }
+            ]
+          }
+        ]
+      }
+]
