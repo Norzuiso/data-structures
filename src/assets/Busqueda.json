@@ -41,7 +41,7 @@
         "body": "La búsqueda secuencial, también se le conoce como búsqueda lineal.\nSupongamos una colección de registros organizados como una lista lineal. El algoritmo básico de búsqueda secuencial consiste en empezar al inicio de la lista e ir a través de cada registro hasta encontrar la clave indicada (k) o hasta el final de la lista.\nEste método consiste en recorrer el arreglo o vector elemento a elemento e ir comparando con el valor buscado (clave). Se empieza con la primera casilla del vector y se observa una casilla tras otra hasta que se encuentre el elemento buscado o se han visto todas las casillas. El resultado de la búsqueda es un solo valor, y será la posición del elemento buscado o cero. \n",
         "code": [{
           "title": "Busqueda binaria",
-          "code": "int search(int arr[], int N, int x)\n      {\n          int i;\n          for (i = 0; i < N; i++)\n      if (arr[i] == x)\n          return i;\n          return -1;\n      }"
+          "code": "int search(int arr[], int N, int x){\n\tint i;\n\t//se recorre el arreglo\n\tfor (i = 0; i < N; i++)\n\t//Si el elemento actual es igual al valor x\n\tif (arr[i] == x)\n\t\t//Retornamos el valor de i (la posicion)\n\t\treturn i;\n\treturn -1;\n}"
         }]
       }
     ]

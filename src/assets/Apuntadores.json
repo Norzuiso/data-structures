@@ -27,7 +27,7 @@
         "images": []
       },
       {
-        "subtitle": "Los punteros y el ampersand",
+        "subtitle": "Los punteros y el ampersand &",
         "body": "El ampersand es un operador de C++ y es comúnmente utilizado para los punteros. Este operador nos permite obtener la dirección de memoria de una variable cualquiera y es justo esto (la dirección en memoria) lo que utilizan los punteros para referenciar valores.",
         "images": [],
         "code": [{
@@ -36,7 +36,7 @@
         }]
       },
       {
-        "subtitle": "Los apuntadores y el asterisco",
+        "subtitle": "Los apuntadores y el asterisco *",
         "body": "El asterisco es, por decirlo de alguna forma, el operador por excelencia de los punteros. SU utilidad radica en que si el valor de dicho apuntador corresponde a una dirección de memoria, el asterisco nos permite resolverla y acceder al valor almacenado allí. Viéndolo desde otro enfoque, un apuntador es únicamente una dirección de memoria (un número) y el asterisco es el que hace la magia de obtener el valor referenciado por dicha dirección.",
         "images": [],
         "code": [

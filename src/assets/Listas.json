@@ -30,73 +30,73 @@
         },
         {
             "subtitle":"Insertar",
-            "body":"Este método recibe un valor y lo coloca en la última posición de la lista, es decir, crea un nuevo nodo",
+            "body":"Este método recibe un valor y lo coloca en la última posición de la lista, es decir, crea un nuevo nodo\n\t - Parametros de entrada\n\tstring data(Este valor es el que guardaremos en nuestro nodo)\n\t - Valor de retorno\n\t Este metodo no cuenta con valores a retornar, por lo que utilizamos void como retorno",
             "images": []
 
         },
         {
             "subtitle":"Eliminar",
-            "body":"El método eliminar recibe la posición del nodo que se desea eliminar, al eliminarse, el nodo anterior pasara a apuntar al que el nodo eliminado apuntaba",
+            "body":"El método eliminar recibe la posición del nodo que se desea eliminar, al eliminarse, el nodo anterior pasara a apuntar al que el nodo eliminado apuntaba\n\t - Parametros de entrada\n\tint position(Solicitamos la posición del elemento deseado a eliminar)\n\t - Valor de retorno \n\t Este metodo no cuenta con valores a retornar, por lo que utilizamos void como retorno",
             "images": []
 
         },
         {
             "subtitle":"Buscar",
-            "body":"El método buscar recibe un elemento X y busca la posición o posiciones donde se encuentra el elemento",
+            "body":"El método buscar recibe un elemento X y busca la posición o posiciones donde se encuentra el elemento\n\t - Parametros de entrada\n\tstring value (este es el valor que vamos a buscar en nuestra lista)\n\t - Valores de retorno\n\t Nodo (este metodo nos va a retornar el Nodo que cuente con el valor de nuestro parametro de entrada)",
             "images": []
 
         },
         {
             "subtitle":"Vacía",
-            "body":"Verifica si la lista se encuentra vacía, devuelve un valor booleano",
+            "body":"Verifica si la lista se encuentra vacía, devuelve un valor booleano\n\t - Paramentros de entrada\n\t Este metodo no cuentas con valores de entrada \n\t - Valores de retorno \n\t bool(Este metodo nos va a retornar un valor Verdadero o un valor Falso)",
             "images": []
 
         },
         {
             "subtitle":"Inicializa",
-            "body":"Este método nos servirá para reservar el espacio en memoria",
+            "body":"Este método nos servirá para reservar el espacio en memoria \n\t Este metodo no cuenta con valores de entrada, solo reserva el espacio en memoria de nuestro nodo head",
             "images": []
 
         },
         {
             "subtitle":"Primero",
-            "body":"método que nos devolverá el primer elemento de la misma",
+            "body":"Este método que nos devolverá el primer elemento de la misma \n\t - Paramentros de entrada\n\t Este metodo no cuenta con valores de entrada \n\t - Valores de retorno \n\t Nodo (Este metodo nos retornara siempre el primer elemento de la lista)",
             "images": []
 
         },
         {
             "subtitle":"Ultimo",
-            "body":"Método que nos retorna el ultimo elemento de la lista",
+            "body":"Método que nos retorna el ultimo elemento de la lista \n\t - Paramentros de entrada\n\t Este metodo no cuenta con valores de entrada \n\t - Valores de retorno \n\t Nodo (Este metodo nos retornara siempre el ultimo elemento de la lista)",
             "images": []
 
         },
         {
             "subtitle":"Siguiente",
-            "body":"De una posición dada nos retorna el siguiente valor en la posición",
+            "body":"De una posición dada nos retorna el siguiente valor en la posición \n\t - Paramentros de entrada\n\t int position (Esta sera la posición +1 a la queremos obtener) \n\t - Valores de retorno \n\t Nodo (Este metodo nos retornara el siguiente elemento dado a la posición ingresada como parametro)",
             "images": []
 
         },
         {
             "subtitle":"Anterior",
-            "body":"Dada una posición nos retorna el valor anterior en la lista",
+            "body":"Dada una posición nos retorna el valor anterior en la lista \n\t - Paramentros de entrada\n\t int position (Esta sera la posición -1 a la queremos obtener) \n\t - Valores de retorno \n\t Nodo (Este metodo nos retornara el anterior elemento dado a la posición ingresada como parametro)",
             "images": []
 
         },
         {
             "subtitle":"Tamaño",
-            "body":"Retorna el tamaño actual de la lista",
+            "body":"Retorna el tamaño actual de la lista  \n\t - Paramentros de entrada\n\t Este metodo no cuenta con valores de entrada \n\t - Valores de retorno \n\t int (Este metodo nos devuelve en valores enteros el tamaño actual de nuestra lista) ",
             "images": []
 
         },
         {
             "subtitle":"Eliminar todo (vaciar)",
-            "body":"elimina todos los elementos",
+            "body":"elimina todos los elementos \n\t - Paramentros de entrada\n\t Este metodo no cuenta con valores de entrada \n\t - Valores de retorno \n\t Este metodo no cuenta con valores de retorno",
             "images": []
 
         },
         {
             "subtitle":"Mostrar lista",
-            "body":"Imprime la lista en pantalla ",
+            "body":"Imprime la lista en pantalla  \n\t - Paramentros de entrada\n\t Este metodo no cuenta con valores de entrada \n\t - Valores de retorno \n\t Este metodo no cuenta con valores de retorno",
             "images": [],
             "code": [{
               "title":"Lista simple .h",
@@ -129,42 +129,48 @@
         },
         {
           "subtitle":"Vacia:",
-          "body": "Verifica si la lista cuenta con elementos. Retorna un valor booleano.\n",
+          "body": "Verifica si la lista cuenta con elementos. Retorna un valor booleano.\n\t - Paramentros de entrada\n\t Este metodo no cuentas con valores de entrada \n\t - Valores de retorno \n\t bool(Este metodo nos va a retornar un valor Verdadero o un valor Falso)",
           "images": []
         },
         {
             "subtitle":"Inicializa:",
-            "body":"Reserva un espacio en memoria.\n",
+            "body":"Este método nos servirá para reservar el espacio en memoria \n\t Este metodo no cuenta con valores de entrada, solo reserva el espacio en memoria de nuestro nodo head",
             "images":[]
         },{
             "subtitle":"Primero:",
-            "body":"Retorna el primer elemento de la lista.\n",
+            "body":"Este método que nos devolverá el primer elemento de la misma \n\t - Paramentros de entrada\n\t Este metodo no cuenta con valores de entrada \n\t - Valores de retorno \n\t Nodo (Este metodo nos retornara siempre el primer elemento de la lista)",
+
             "images":[]
         },{
             "subtitle":"Ultimo:",
-            "body":"Retorna el ultimo elemento de la lista.\n",
+            "body":"Método que nos retorna el ultimo elemento de la lista \n\t - Paramentros de entrada\n\t Este metodo no cuenta con valores de entrada \n\t - Valores de retorno \n\t Nodo (Este metodo nos retornara siempre el ultimo elemento de la lista)",
             "images":[]
         },
         {
             "subtitle":"Siguiente:",
-            "body":"Dada una posicion, retorna el valor del siguiente elemento.\n",
+            "body":"Dada una posicion, retorna el valor del siguiente elemento. \n\t - Paramentros de entrada\n\t int position (Esta sera la posición +1 a la queremos obtener) \n\t - Valores de retorno \n\t Nodo (Este metodo nos retornara el siguiente elemento dado a la posición ingresada como parametro)",
+
             "images":[]
         },
         {
             "subtitle":"Anterior:",
-            "body":"Dada una posicion retorna el valor anterior.\n",
+            "body":"Dada una posicion retorna el valor anterior \n\t - Paramentros de entrada\n\t int position (Esta sera la posición -1 a la queremos obtener) \n\t - Valores de retorno \n\t Nodo (Este metodo nos retornara el anterior elemento dado a la posición ingresada como parametro)",
+
             "images":[]
         },{
             "subtitle":"Tamaño:",
-            "body":"Retorna la cantidad de elementos de una lista.\n",
+            "body":"Retorna la cantidad de elementos de una lista.  \n\t - Paramentros de entrada\n\t Este metodo no cuenta con valores de entrada \n\t - Valores de retorno \n\t int (Este metodo nos devuelve en valores enteros el tamaño actual de nuestra lista) ",
+
             "images":[]
         },{
             "subtitle":"Vaciar(eliminar todo):",
-            "body": "Borra todos los elementos de la lista.\n",
+            "body":"Borra todos los elementos de la lista. \n\t - Paramentros de entrada\n\t Este metodo no cuenta con valores de entrada \n\t - Valores de retorno \n\t Este metodo no cuenta con valores de retorno",
+
             "images": []
         },{
             "subtitle":"Mostrar listas:",
-            "body":"Imprime en pantalla los elementos de una lista\n",
+            "body":"Imprime en pantalla los elementos de una lista  \n\t - Paramentros de entrada\n\t Este metodo no cuenta con valores de entrada \n\t - Valores de retorno \n\t Este metodo no cuenta con valores de retorno",
+
             "images":[],
             "code": [
               {
