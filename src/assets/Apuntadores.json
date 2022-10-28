@@ -47,6 +47,17 @@
         ]
       },
       {
+        "subtitle": "Aritmetica de apuntadores",
+        "body": "Suma y resta\nLa suma y resta de apuntadores funciona unicamente cuando los apuntadores senhalan lugares de memoria del mismo arreglo integrado. Usar enteros para sumar o restar tiene diferente resultado segun el tipo de objeto al cual hace referencia, siendo por ejemplo en el caso de los «int» tomando 4 bytes; Si fuera el caso que la posicion que se apunta fuera la 2500 y, se le incrementa en 1, se estaria apuntando ahora a 2504. Se pueden emplear operadores de incremento y decremento tales como “++”,“--”,“+=”,etc. \nTambien se pueden hacer operaciones usando otros punteros para llevar a cabo la suma o resta, sin embargo estos habran de formar parte del mismo arregla integrado para surtir efecto. \nAsignacion de apuntadores\nSe puede asignar el valor de un apuntador a otro mas siempre que sean del mismo tipo, en los casos que no se puede castear usando “reinterpreter_cast”, sin embargo a un apuntador del tipo void no lo podemos incluir en esto pues el compilador no es capaz de inferir cuantos bytes consta este, por lo que se habra de usar “reinterpreter_cast” antes de asignarle.\nDesferir un apuntador void\nEn el caso de estos apuntadores el compilador no conoce el tipo de dato especifico que apunta este pues estos apuntadores son genericos y pueden apuntar distintos tipos de datos, a diferencia de un tipo “int” que el compilador conoce cuantos bytes usa. Para estos no se le puede determinar el numero de bytes\nComparacion entre apuntadores\nLa comparacion de apuntadores se emplea para conocer si existe igualdad o de operaciones relacionales, siendo estas ultimas en el empleo de un mismo arreglo integrado, pues de otra manera no tendria sentido; Para estas se intenta conocer cual de estos espacios tiene un mayor/menor numeracion que el otro. Un uso comun es descubrir si alguno de estos esta apuntando a 0 o null.",
+        "images": [],
+        "code": [
+          {
+            "title":"Suma y resta de apuntadores",
+            "code": "//Las operaciones se emplean unicamente cuando los punteros apuntan a un mismo arregla integrado, siendo pues la diferencia entre los puestos de memoria\n//ya me dio un putero de weba seguirle con el pedo del codigo pero creo que el body quedo bien o al menos 2 3, wenas noches wn"
+          }
+        ]
+      },
+      {
         "subtitle": "Referencia",
         "body": "Referencia de un puntero: Se puede alterar una variable a la que apunta un puntero. Para ello se usa el operador de referencia, que es el asterisco: \n          * puntero = 45;",
         "images": []
