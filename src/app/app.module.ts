@@ -11,7 +11,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {ShowDataComponent} from "./Components/show-data/show-data.component";
-import {FuuuckService} from "./Components/fuuuck.service";
+import {DataService} from "./Components/data.service";
 import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
@@ -31,7 +31,7 @@ import {HttpClientModule} from "@angular/common/http";
     MatButtonModule,
     HttpClientModule
   ],
-  providers: [FuuuckService],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

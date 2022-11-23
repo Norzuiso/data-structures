@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {FuuuckService} from "./Components/fuuuck.service";
+import {DataService} from "./Components/data.service";
 import {JSONRecord} from "./Components/JSONRecord";
 
 @Component({
@@ -11,7 +11,7 @@ import {JSONRecord} from "./Components/JSONRecord";
 export class AppComponent implements OnInit {
   public answer: JSONRecord[] = [];
 
-  constructor(private service: FuuuckService) {
+  constructor(private service: DataService) {
   }
 
   ngOnInit(): void {
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
   public ordenamiento(){
     this.service.getOrdenamiento().subscribe(data => this.answer = data);
   }
-  
+
   public apuntadores(){
     this.service.getApuntadores().subscribe(data => this.answer = data);
   }
